@@ -1,0 +1,7 @@
+# Reuses log-collector's collector.py (see pipeline_bridge.py), which
+# transitively needs pywin32/sqlalchemy/python-dotenv — installing
+# log-collector's own requirements covers that.
+-r ../log-collector/requirements.txt
+
+requests==2.32.3
+pydantic-settings==2.7.1

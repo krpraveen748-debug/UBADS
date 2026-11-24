@@ -1,0 +1,10 @@
+# Build-only dependency — NOT needed to run the agent from source (see
+# agent/requirements.txt for that). Only needed to package agent.py into
+# a local Windows executable with PyInstaller (see agent/README.md
+# "Building a local Windows executable").
+#
+# Install alongside agent/requirements.txt and log-collector/requirements.txt
+# (the running agent's own dependencies) before building:
+#   pip install -r agent/requirements.txt
+#   pip install -r agent/requirements-build.txt
+pyinstaller==6.22.3

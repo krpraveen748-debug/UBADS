@@ -1,0 +1,12 @@
+*** UBADS INSTALLER - TEST BUILD ***
+
+This is an isolated DEVELOPMENT test build used to verify the UBADS enrollment
+installer. It installs into its own folder, keeps its own agent data folder
+(%LOCALAPPDATA%\UBADS-TEST) and uses its own startup task ("UBADS Agent TEST").
+It does not use or modify an installed UBADS agent or its scheduled task.
+
+It enrolls only against a test server (127.0.0.1) with the one-time code in its
+file name. Do not use it on a real computer.
+
+Not code-signed. Windows may warn you; UBADS does not bypass those checks.
+Uninstall: Windows Settings > Apps > UBADS Windows Endpoint Agent [TEST BUILD].

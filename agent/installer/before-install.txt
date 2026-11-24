@@ -1,0 +1,38 @@
+UBADS Windows Endpoint Agent
+
+What this installs
+  A background program that collects the Windows activity categories your UBADS
+  administrator approved for this computer, and sends them to your organisation's
+  UBADS server for security research.
+
+Authorization
+  Enrollment is authorized by an administrator. If you downloaded this installer
+  from the UBADS portal, it carries a one-time authorization for YOUR approved
+  request. It works once and expires; if it fails, download a fresh installer.
+  An installer without that authorization installs the program files only and
+  does not enroll or collect anything.
+
+Monitoring scope
+  Only the categories approved for your request are collected, for example:
+  authentication events, process activity, file activity, device activity.
+  The server rejects anything outside the approved scope.
+
+Never collected
+  Passwords or password hashes, keystrokes, private messages or email, document
+  or file contents, browser passwords/cookies/history, screenshots, webcam or
+  microphone data.
+
+Windows permissions
+  Windows will ask for permission (User Account Control) because installing and
+  reading the Windows Security log need administrator rights. Approve it only if
+  you trust this file. This installer is NOT code-signed, so Windows SmartScreen
+  or your antivirus may warn you; UBADS does not bypass or disable those checks.
+  The installer does not change any Windows audit policy.
+
+Uninstalling
+  Windows Settings > Apps > Installed apps > UBADS Windows Endpoint Agent >
+  Uninstall. This stops the agent and removes its startup task. The computer's
+  UBADS identity stays on disk so a later reinstall keeps it; ask an
+  administrator to revoke the endpoint if the computer is being retired.
+  An administrator can also revoke your authorization at any time, after which
+  the server stops accepting data from this computer.

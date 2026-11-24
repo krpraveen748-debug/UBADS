@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.local
+
+# Phase 14A — the real compiled Windows agent installer, copied here only
+# for local dev/demo downloads (see EndpointEnrollment.jsx and
+# agent/README.md "Local development download"). A ~20MB build artifact
+# regenerated from agent/dist/UBADS-Agent-Setup.exe — never committed.
+# (public/downloads/README.md itself IS tracked — see that file.)
+public/downloads/*.exe

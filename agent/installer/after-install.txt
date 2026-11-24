@@ -1,0 +1,18 @@
+UBADS Windows Endpoint Agent
+
+The endpoint-specific installer downloaded from the UBADS portal enrolls
+this computer with the approved, one-time authorization and starts the
+agent automatically.
+
+The agent stores configuration and state under:
+  %ProgramData%\UBADS\Agent
+
+The agent does not enable Windows audit policies. An administrator must
+review and enable any required event collection policies separately; see
+log-collector\README.md in the UBADS project.
+
+To check agent status, use "UBADS Agent Status" from the Start Menu.
+To uninstall, use Windows Settings > Apps > Installed apps.
+
+Existing pre-4H-2 installations are intentionally blocked from upgrading
+until a supported state migration is available.

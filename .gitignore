@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+config/*.env
+!config/.env.example
+!frontend/.env.example
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+secrets.json
+
+# Local data & models (never committed — may contain real, sensitive log data)
+data/raw/*
+data/processed/*
+data/backups/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+models/*.pkl
+models/*.joblib
+models/anomaly-detection/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+*.backup*
+*.bak
+
+# Node / frontend (future phase)
+node_modules/
+frontend/build/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+
+# Agent local state (endpoint identity, bounded pending-events buffer —
+# never real credentials, but machine-specific and not meant to be shared)
+agent/.state/
+
+# Agent packaging build artifacts (Phase 13 — PyInstaller). The .exe is a
+# rebuildable local/dev artifact, never checked in; ubads_agent.spec
+# itself IS tracked (it's the reproducible build recipe, not output).
+agent/build/
+agent/build-test/
+agent/dist/
+agent/dist-test/
+agent/*.env
+
+# Standalone build, test, and distribution output
+build-test/
+dist-test/
+test-results/
+playwright-report/
+*.exe
+*.msi
+
+# IDE
+.vscode/
+.idea/
+
+# Test / coverage
+.pytest_cache/
+htmlcov/
+.coverage
+agent/agent.env
+
+# Playwright artifacts
+frontend/test-results/
+frontend/playwright-report/
